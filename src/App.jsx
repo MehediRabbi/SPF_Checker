@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import "./App.css";
 
@@ -52,6 +51,13 @@ function App() {
     }
   };
 
+  const clearAll = () => {
+    setDomain("");
+    setSpfRecords([]);
+    setError("");
+    setLoading(false);
+  };
+
   const highlightSPF = (record) => {
     return record.replace(
       /(include:[^\s]+|redirect=[^\s]+)/g,
@@ -71,6 +77,9 @@ function App() {
           onChange={(e) => setDomain(e.target.value)}
         />
         <button type="submit">Check SPF</button>
+        <button type="button" onClick={clearAll}>
+          Clear
+        </button>
       </form>
 
       {loading && <p className="loading">Checking DNS records...</p>}
