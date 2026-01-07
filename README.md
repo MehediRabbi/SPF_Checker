@@ -1,16 +1,28 @@
-# React + Vite
+# SPF Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to Run the Application Locally
 
-Currently, two official plugins are available:
+### Prerequisites
+- Node.js (v16 or higher)
+- npm
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Steps
 
-## React Compiler
+```bash
+git clone https://github.com/MehediRabbi/SPF_Checker.git
+cd SPF_Checker
+npm install
+npm run dev
+Open the application in your browser:
+http://localhost:5173
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Assumptions & Limitations
+The application uses Google DNS-over-HTTPS API to perform DNS TXT lookups.
 
-## Expanding the ESLint configuration
+An active internet connection is required.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Browsers cannot perform native DNS queries, so a third-party DNS API is used.
+
+The app does not recursively resolve include: or redirect= SPF mechanisms.
+
+No backend server is involved; the app runs entirely on the client side.
