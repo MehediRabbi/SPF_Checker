@@ -1,0 +1,49 @@
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.record {
+  background: #f1f1f1;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+.highlight {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.loading {
+  margin-top: 10px;
+}
