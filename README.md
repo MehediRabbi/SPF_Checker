@@ -55,18 +55,12 @@ After running the command, Vite will show a local URL, usually:
 http://localhost:5173
 
 
-## Assumptions & Limitations
+## **Assumptions & Limitations**
 
-The application uses Google DNS over HTTPS (https://dns.google/resolve) for TXT record lookups.
-
-Only SPF records starting with v=spf1 are displayed.
-
-The app does not validate SPF syntax correctness—it only fetches and displays records.
-
-Multiple SPF records (if present) are shown as-is.
-
-DNS lookup depends on network availability and Google DNS uptime.
-
-This is a client-side only application—no backend is used.
-
-CORS policies may affect DNS lookups in restricted environments.
+- The application uses Google DNS over HTTPS (https://dns.google/resolve) for TXT record lookups.
+- Only SPF records starting with `v=spf1` are displayed.
+- The app does not validate SPF syntax correctness; it only fetches and displays records.
+- Multiple SPF records (if present) are shown as-is.
+- DNS lookup depends on network availability and Google DNS uptime.
+- This is a client-side only application—no backend is used.
+- CORS policies may affect DNS lookups in restricted environments.
