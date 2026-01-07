@@ -1,5 +1,7 @@
 # SPF Checker (React)
 
+Live Link: https://spf-checker-silk.vercel.app/
+
 A simple and lightweight **React single-page application** that allows users to check the **SPF (Sender Policy Framework)** record of any domain.
 
 The app performs a DNS TXT lookup using Google DNS and displays all valid SPF records (`v=spf1`) in a clean, readable format.
@@ -8,12 +10,12 @@ The app performs a DNS TXT lookup using Google DNS and displays all valid SPF re
 
 ## 🚀 Features
 
-- Check SPF records for any valid domain
-- Validates domain input before lookup
-- Highlights `include:` and `redirect=` mechanisms
-- Displays clear error messages
-- Loading indicator during DNS lookup
-- Clear button to reset input and results
+- Check SPF records for any valid domain.
+- Validates domain input before lookup.
+- Highlights `include:` and `redirect=` mechanisms.
+- Displays clear error messages.
+- Loading indicator during DNS lookup.
+- Clear button to reset input and results.
 - Built with **React + Vite**
 
 ---
